@@ -29,7 +29,7 @@
     <!-- Main Styles -->
     <link href="css/styles.css" rel="stylesheet">
     <!-- Theme -->
-    <link href="css/theme/light-green.css" rel="stylesheet" data-color="" id="theme">
+    <link href="css/theme/purple.css" rel="stylesheet" data-color="" id="theme">
     <!-- Animsition -->
     <link href="css/animsition.min.css" rel="stylesheet">
     <!-- Favicon (retina) -->
@@ -48,13 +48,13 @@
 
 <body>
     <!-- Page Wrapper -->
-    <div id="page" class="animsition equal" data-loader-type="loader2" data-page-loader-text="Volar" data-animsition-in="zoom-outy" data-animsition-out="fade-out-up-sm" style="transform-origin: 50% 50vh;">
+    <div id="page" class="animsition equal" data-loader-type="loader2" data-page-loader-text="Volar" data-animsition-in="fade-in-up-sm" data-animsition-out="fade-out-up-sm" style="transform-origin: 50% 50vh;">
         <div id="top"></div>
-       <!-- Home Section -->
+        <!-- Home Section -->
         <section id="home-section" class="home-section full-screen">
             <div id="youtube-bg" class="youtube-bg overlay full-screen">
             </div>
-            <a id="ds" class="player" data-property="{dsURL:'70QxE3zJM_8',containment:'#youtube-bg', showControls:false, showYTLogo:true,  autoPlay:true, loop:true, mute:true, startAt:0, stopAt:14, opacity:1, addRaster:false, quality:'default'}">My ds</a>
+            <a id="video" class="player" data-property="{videoURL:'bc3YCRDjCys',containment:'#youtube-bg', showControls:false, showYTLogo:true,  autoPlay:true, loop:true, mute:true, startAt:0, stopAt:14, opacity:1, addRaster:false, quality:'default'}">My video</a>
             <div class="hs-content full-screen">
                 <div class="hs-content-inner">
                     <div class="init-animation-2 delay0-4s">
@@ -79,8 +79,8 @@
         <!-- Navbar -->
         <div class="position-relative">
             <!-- sticky: 1) remove"transp-nav" class, add class="sticky-navbar" to #nav-wrapper | 2) remove navbar-fixed-top class from #nav [and navbar-transparent class too] -->
-            <div id="nav-wrapper" class="transp-nav">
-                <nav id="nav" class="navbar navbar-fixed-top navbar-transparent navbar-dark ripple-group-parent init-animation-1" role="navigation">
+            <div id="nav-wrapper" class="sticky-navbar">
+                <nav id="nav" class="navbar navbar-default ripple-group-parent" role="navigation">
                     <!-- progressbar -->
                     <div id="scroll-progressbar" class="scroll-progressbar">
                         <div>
@@ -117,13 +117,28 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ripple-group" href="#classes-section">
-                                        <span data-hover="classes">classes</span>
+                                    <a class="ripple-group" href="#services-section">
+                                        <span data-hover="services">services</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ripple-group" href="#portfolio-section">
+                                        <span data-hover="portfolio">portfolio</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="ripple-group" href="#team-section">
                                         <span data-hover="team">team</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ripple-group" href="#process-section">
+                                        <span data-hover="process">process</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ripple-group animsition-link" href="blog.html">
+                                        <span data-hover="blog">blog</span>
                                     </a>
                                 </li>
                                 <li>
@@ -200,152 +215,332 @@
             </section>
             <!--/ End About Section -->
             <hr />
-            <!-- Facts Section -->
-            <div id="facts-section" class="facts-section text-center font-second small-section">
+            <hr />
+            <!-- Team Section -->
+            <section id="team-section" class="team-section section">
                 <div class="container">
                     <div class="row">
-                        <!-- Fact Item -->
-                        <div class="col-sm-3 fact-item col-xs-6 margin-bottom-xs-40">
-                            <div class="fact-number font-second">
-                                <p class="counter">258</p>
-                            </div>
-                            <div class="fact-text">
-                                <p>apps created</p>
-                            </div>
-                        </div>
-                        <!--/ End Fact Item -->
-                        <div class="fact-item col-sm-3 col-xs-6 margin-bottom-xs-40">
-                            <div class="fact-number font-second">
-                                <p class="counter">1436</p>
-                            </div>
-                            <div class="fact-text">
-                                <p>active users</p>
+                        <div class="col-sm-6">
+                            <div class="section-title">
+                                <div class=" section-title-more">
+                                    get to know our
+                                </div>
+                                <div>
+                                    <h2 class="section-title-heading"><span>team </span>members</h2>
+                                </div>
                             </div>
                         </div>
-                        <!--/ End Fact Item -->
-                        <div class="fact-item col-sm-3 col-xs-6">
-                            <div class="fact-number font-second">
-                                <p class="counter">27</p>
-                            </div>
-                            <div class="fact-text">
-                                <p>Monthly events</p>
-                            </div>
+                        <!-- /.col -->
+                        <div class="col-sm-6 margin-bottom-xs-40">
+                            <p class="section-text">Laboriosam quae vel odit dignissimos maxime quis ab nihil sapiente, a, optio accusamus temporibus veniam assumenda gnissimos maxime quiex rerum repudiandae.</p>
                         </div>
-                        <!--/ End Fact Item -->
-                        <div class="fact-item col-sm-3 col-xs-6">
-                            <div class="fact-number font-second">
-                                <p class="counter">315</p>
-                            </div>
-                            <div class="fact-text">
-                                <p>Heart beats</p>
-                            </div>
-                        </div>
-                        <!--/ End Fact Item -->
                     </div>
+                    <!-- /.col -->
                     <!-- /.row -->
+                    <!-- Team Items -->
+                    <div class="team-items">
+                        <!-- Team Carousel -->
+                        <div id="team-carousel" class="team-carousel owl-carousel carousel dots-under">
+                            <!-- Team Item -->
+                            <div class="team-item">
+                                <!-- Team Item Image -->
+                                <div class="team-item-img">
+                                    <img src="http://placehold.it/480x640" alt="team member" />
+                                </div>
+                                <!--/ End Team Item Imagee -->
+                                <!-- Team Item Name -->
+                                <div class="team-item-name font-second">
+                                    <h4 class="">miranda lawson</h4>
+                                    <span>art director</span>
+                                </div>
+                                <!--/ End Team Item Name -->
+                                <!-- Team Item Info -->
+                                <div class="team-item-info">
+                                    <div class="team-item-text">
+                                        <h3 class="font-second">get in <span>touch ..</span></h3>
+                                        <p>Spudiandae nesciunt, eosihil praesentium soluta natus eaque..</p>
+                                    </div>
+                                    <div class="skillbar-container">
+                                        <p class="skillbar-title font-second">Javascript
+                                            <span>54%</span>
+                                        </p>
+                                        <!-- Skill Bar Precent_ to change the percent change the data-percent="..." -->
+                                        <div class="skillbar">
+                                            <div class="skillbar-bar" data-percent="54%"></div>
+                                        </div>
+                                    </div>
+                                    <!--/ End Skill Bar -->
+                                    <div class="skillbar-container">
+                                        <p class="skillbar-title font-second">Ruby
+                                            <span>99%</span>
+                                        </p>
+                                        <div class="skillbar">
+                                            <div class="skillbar-bar delay0-2s" data-percent="99%"></div>
+                                        </div>
+                                    </div>
+                                    <!--/ End Skill Bar -->
+                                    <ul class="team-item-social clearlist">
+                                        <li>
+                                            <a href="#." class="fa fa-facebook-square"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class=" fa fa-twitter"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class="fa fa-pinterest"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--/ End Team Item Info -->
+                            </div>
+                            <!--/ End Team Item -->
+                            <!-- Team Item -->
+                            <div class="team-item">
+                                <!-- Team Item Image -->
+                                <div class="team-item-img">
+                                    <img src="http://placehold.it/480x640" alt="team member" />
+                                </div>
+                                <!--/ End Team Item Image -->
+                                <!-- Team Item Name -->
+                                <div class="team-item-name font-second">
+                                    <h4 class="">Garrus Vakarian</h4>
+                                    <span>project manager</span>
+                                </div>
+                                <!--/ End Team Item Name -->
+                                <!-- Team Item Info -->
+                                <div class="team-item-info">
+                                    <div class="team-item-text">
+                                        <h3 class="font-second"><span>love</span> the nature</h3>
+                                        <p>Mlestias dicta digre dolorumor ipsum ut aut. Distinctio, inventore!</p>
+                                    </div>
+                                    <div class="skillbar-container">
+                                        <p class="skillbar-title font-second">jQuery
+                                            <span>75%</span>
+                                        </p>
+                                        <!-- Skill Bar Precent_ to change the percent change the data-percent="..." -->
+                                        <div class="skillbar">
+                                            <div class="skillbar-bar" data-percent="75%"></div>
+                                        </div>
+                                    </div>
+                                    <!--/ End Skill Bar -->
+                                    <div class="skillbar-container">
+                                        <p class="skillbar-title font-second">CSS3
+                                            <span>90%</span>
+                                        </p>
+                                        <div class="skillbar">
+                                            <div class="skillbar-bar delay0-2s" data-percent="90%"></div>
+                                        </div>
+                                    </div>
+                                    <!--/ End Skill Bar -->
+                                    <ul class="team-item-social clearlist">
+                                        <li>
+                                            <a href="#." class="fa fa-facebook-square"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class=" fa fa-twitter"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class="fa fa-skype"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class="fa fa-pinterest"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--/ End Item Info -->
+                            </div>
+                            <!--/ End Team Item -->
+                            <!-- Team Item -->
+                            <div class="team-item">
+                                <!-- Team Item Image -->
+                                <div class="team-item-img">
+                                    <img src="http://placehold.it/480x640" alt="team member" />
+                                </div>
+                                <!--/ End Team Item Image -->
+                                <!-- Team Item Name -->
+                                <div class="team-item-name font-second">
+                                    <h4 class="">Steven Hackett</h4>
+                                    <span>web designer</span>
+                                </div>
+                                <!--/ End Team Item Name -->
+                                <!-- Team Item Info -->
+                                <div class="team-item-info">
+                                    <div class="team-item-text">
+                                        <h3 class="font-second">Let's <span>roll.</span></h3>
+                                        <p>Labore earum ius iure. Placeat tempore optio omnis beatae.</p>
+                                    </div>
+                                    <div class="skillbar-container">
+                                        <p class="skillbar-title font-second">Photoshop
+                                            <span>81%</span>
+                                        </p>
+                                        <!-- Skill Bar Precent_ to change the percent change the data-percent="..." -->
+                                        <div class="skillbar">
+                                            <div class="skillbar-bar" data-percent="81%"></div>
+                                        </div>
+                                    </div>
+                                    <!--/ End Skill Bar -->
+                                    <div class="skillbar-container">
+                                        <p class="skillbar-title font-second">Illustrator
+                                            <span>68%</span>
+                                        </p>
+                                        <div class="skillbar">
+                                            <div class="skillbar-bar delay0-2s" data-percent="68%"></div>
+                                        </div>
+                                    </div>
+                                    <!--/ End Skill Bar -->
+                                    <ul class="team-item-social clearlist">
+                                        <li>
+                                            <a href="#." class=" fa fa-twitter"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class="fa fa-skype"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class="fa fa-pinterest"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--/ End Item Info -->
+                            </div>
+                            <!--/ End Team Item -->
+                            <!-- Team Item -->
+                            <div class="team-item">
+                                <!-- Team Item Image -->
+                                <div class="team-item-img">
+                                    <img src="http://placehold.it/480x640" alt="team member" />
+                                </div>
+                                <!--/ End Team Item Image -->
+                                <!-- Team Item Name -->
+                                <div class="team-item-name font-second">
+                                    <h4 class="">Sansa Stark</h4>
+                                    <span>Photoshp Expert</span>
+                                </div>
+                                <!--/ End Team Item Name -->
+                                <!-- Team Item Info -->
+                                <div class="team-item-info">
+                                    <div class="team-item-text">
+                                        <h3 class="font-second"><span>believe</span> in yourself - !</h3>
+                                        <p>Simos ni nemo veritatis asperiores averienetur rati.</p>
+                                    </div>
+                                    <div class="skillbar-container">
+                                        <p class="skillbar-title font-second">Photoshop
+                                            <span>99%</span>
+                                        </p>
+                                        <!-- Skill Bar Precent_ to change the percent change the data-percent="..." -->
+                                        <div class="skillbar">
+                                            <div class="skillbar-bar" data-percent="81%"></div>
+                                        </div>
+                                    </div>
+                                    <!--/ End Skill Bar -->
+                                    <div class="skillbar-container">
+                                        <p class="skillbar-title font-second">Illustrator
+                                            <span>78%</span>
+                                        </p>
+                                        <div class="skillbar">
+                                            <div class="skillbar-bar delay0-2s" data-percent="68%"></div>
+                                        </div>
+                                    </div>
+                                    <!--/ End Skill Bar -->
+                                    <ul class="team-item-social clearlist">
+                                        <li>
+                                            <a href="#." class="fa fa-facebook-square"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class=" fa fa-twitter"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class="fa fa-skype"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class="fa fa-pinterest"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--/ End Item Info -->
+                            </div>
+                            <!--/ End Team Item -->
+                            <!-- Team Item -->
+                            <div class="team-item">
+                                <!-- Team Item Image -->
+                                <div class="team-item-img">
+                                    <img src="http://placehold.it/480x640" alt="team member" />
+                                </div>
+                                <!--/ End Team Item Image -->
+                                <!-- Team Item Name -->
+                                <div class="team-item-name font-second">
+                                    <h4 class="">Philip owen</h4>
+                                    <span>Sales Manager</span>
+                                </div>
+                                <!--/ End Team Item Name -->
+                                <!-- Team Item Info -->
+                                <div class="team-item-info">
+                                    <div class="team-item-text">
+                                        <h3 class="font-second"><span>Fly</span> with me ..</h3>
+                                        <p>Noi nemo veritatis asperiores fimos averienetur rati.</p>
+                                    </div>
+                                    <div class="skillbar-container">
+                                        <p class="skillbar-title font-second">Photography
+                                            <span>175%</span>
+                                        </p>
+                                        <!-- Skill Bar Precent_ to change the percent change the data-percent="..." -->
+                                        <div class="skillbar">
+                                            <div class="skillbar-bar" data-percent="81%"></div>
+                                        </div>
+                                    </div>
+                                    <!--/ End Skill Bar -->
+                                    <div class="skillbar-container">
+                                        <p class="skillbar-title font-second">production managment
+                                            <span>88%</span>
+                                        </p>
+                                        <div class="skillbar">
+                                            <div class="skillbar-bar delay0-2s" data-percent="68%"></div>
+                                        </div>
+                                    </div>
+                                    <!--/ End Skill Bar -->
+                                    <ul class="team-item-social clearlist">
+                                        <li>
+                                            <a href="#." class="fa fa-facebook-square"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class=" fa fa-twitter"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#." class="fa fa-skype"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--/ End Item Info -->
+                            </div>
+                            <!--/ End Team Item -->
+                        </div>
+                        <!--/ End Team Carousel -->
+                    </div>
+                    <!--/ End Team Items -->
                 </div>
                 <!-- /.container -->
-            </div>
-            <!--/ End Facts Section -->
-            <hr />
-            <!-- classes Section -->
-            <section id="classes-section" class="classes-section section">
-                <div class="container">
-                    <div class="section-title">
-                        <div class=" section-title-more">
-                            well covered and efficient
-                        </div>
-                        <div>
-                            <h1 class="section-title-heading"><span>classes</span> provided</h1>
-                        </div>
-                    </div>
-                    <div class="classes-section-items padding-top-sm-10 row">
-                        <div class="classes-section-item col-sm-4 margin-bottom-xs-40 wow fadeInUpLeftScale">
-                            <div class="classes-section-item-icon">
-                                <i class="icon-laptop"></i>
-                            </div>
-                            <h4 class="classes-item-title font-second">Capoeira</h4>
-                            <div class="classes-section-item-text">
-                                <p>Magnam distinctio unde atque quos iusto illoim dignissimos hic. Dolore iusto illo, eaque eligendi itaque, iure facilis fugiat et.</p>
-                            </div>
-                        </div>
-                        <!--/ End classes Section Item -->
-                        <div class="classes-section-item col-sm-4 margin-bottom-xs-40 wow fadeInUpScale">
-                            <div class="classes-section-item-icon">
-                                <i class="icon-lightbulb"></i>
-                            </div>
-                            <h4 class="classes-item-title font-second">Samba de Roda</h4>
-                            <div class="classes-section-item-text">
-                                <p>Magnam distinctio unde atque quos iusto illoim dignissimos hic. Dolore iusto illo, eaque eligendi itaque, iure facilis fugiat et..</p>
-                            </div>
-                        </div>
-                        <!--/ End classes Section Item -->
-                        <div class="classes-section-item col-sm-4 margin-bottom-xs-40 wow fadeInUpRightScale">
-                            <div class="classes-section-item-icon">
-                                <i class="icon-ds"></i>
-                            </div>
-                            <h4 class="classes-item-title font-second">Maculele</h4>
-                            <div class="classes-section-item-text">
-                                <p>Magnam distinctio unde atque quos iusto illoim dignissimos hic. Dolore iusto illo, eaque eligendi itaque, iure facilis fugiat et..</p>
-                            </div>
-                        </div>
-                        <!--/ End classes Section Item -->
-                        <div class="classes-section-item col-sm-4 margin-bottom-xs-40 wow fadeInUpLeftScale">
-                            <div class="classes-section-item-icon">
-                                <i class="icon-flag"></i>
-                            </div>
-                            <h4 class="classes-item-title font-second">Strength & Conditioning</h4>
-                            <div class="classes-section-item-text">
-                                <p>Magnam distinctio unde atque quos iusto illoim dignissimos hic. Dolore iusto illo, eaque eligendi itaque, iure facilis fugiat et..</p>
-                            </div>
-                        </div>
-                        <!--/ End classes Section Item -->
-                        <div class="classes-section-item col-sm-4 margin-bottom-xs-40 wow fadeInUpScale">
-                            <div class="classes-section-item-icon">
-                                <i class="icon-camera"></i>
-                            </div>
-                            <h4 class="classes-item-title font-second">Self Defense</h4>
-                            <div class="classes-section-item-text">
-                                <p>Magnam distinctio unde atque quos iusto illoim dignissimos hic. Dolore iusto illo, eaque eligendi itaque, iure facilis fugiat et..</p>
-                            </div>
-                        </div>
-                        <!--/ End classes Section Item -->
-                        <div class="classes-section-item col-sm-4 wow fadeInUpRightScale">
-                            <div class="classes-section-item-icon">
-                                <i class="icon-strategy"></i>
-                            </div>
-                            <h4 class="classes-item-title font-second">Music</h4>
-                            <div class="classes-section-item-text">
-                                <p>Magnam distinctio unde atque quos iusto illoim dignissimos hic. Dolore iusto illo, eaque eligendi itaque, iure facilis fugiat et..</p>
-                            </div>
-                        </div>
-                        <!--/ End classes Section Item -->
-                    </div>
-                    <!--/.row -->
-                </div>
-                <!--/.container -->
             </section>
-            <!--/ End classes Section -->
+            <!--/ End Team Section -->
             <hr />
-           
+            <!-- Process Section -->
+            <!--/ End Process Section -->
             <!-- Clients Logos -->
             <div class="client-logos small-section">
                 <div class="container">
                     <div id="client-logos" class="owl-carousel">
                         <div>
-                            <img src="http://placehold.it/200x80" alt="client logo" />
+                            <img src="http://placehold.it/200x70" alt="client logo" />
                         </div>
                         <div>
-                            <img src="http://placehold.it/200x80" alt="client logo" />
+                            <img src="http://placehold.it/200x70" alt="client logo" />
                         </div>
                         <div>
-                            <img src="http://placehold.it/200x80" alt="client logo" />
+                            <img src="http://placehold.it/200x70" alt="client logo" />
                         </div>
                         <div>
-                            <img src="http://placehold.it/200x80" alt="client logo" />
+                            <img src="http://placehold.it/200x70" alt="client logo" />
                         </div>
                         <div>
-                            <img src="http://placehold.it/200x80" alt="client logo" />
+                            <img src="http://placehold.it/200x70" alt="client logo" />
                         </div>
                     </div>
                 </div>
@@ -471,8 +666,7 @@
                 <!--/ .container -->
             </section>
             <!--/ End Pricing Section -->
-            
-
+            <hr />
             <!-- Contact Section -->
             <section id="contact-section" class="section contact-section">
                 <div class="container">
@@ -569,7 +763,7 @@
             <footer class="footer-section section no-padding-bottom">
                 <!-- footer logo -->
                 <div class="footer-logo">
-                        <img src="http://placehold.it/200x70" alt="logo" />
+                    <img src="http://placehold.it/200x70" alt="logo" />
                     <p class="font-second">
                         volar
                     </p>

@@ -29,7 +29,7 @@
     <!-- Main Styles -->
     <link href="css/styles.css" rel="stylesheet">
     <!-- Theme -->
-    <link href="css/theme/light-green.css" rel="stylesheet" data-color="" id="theme">
+    <link href="css/theme/purple.css" rel="stylesheet" data-color="" id="theme">
     <!-- Animsition -->
     <link href="css/animsition.min.css" rel="stylesheet">
     <!-- Favicon (retina) -->
@@ -48,26 +48,26 @@
 
 <body>
     <!-- Page Wrapper -->
-    <div id="page" class="animsition equal" data-loader-type="loader2" data-page-loader-text="Volar" data-animsition-in="zoom-outy" data-animsition-out="fade-out-up-sm" style="transform-origin: 50% 50vh;">
+    <div id="page" class="animsition equal" data-loader-type="loader2" data-page-loader-text="Volar" data-animsition-in="fade-in-up-sm" data-animsition-out="fade-out-up-sm" style="transform-origin: 50% 50vh;">
         <div id="top"></div>
         <!-- Home Section -->
         <section id="home-section" class="home-section full-screen">
-            <div class="parallax-hero full-screen overlay home-bg" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#home-section">
+            <div id="youtube-bg" class="youtube-bg overlay full-screen">
             </div>
-            <div class="hs-content">
+            <a id="video" class="player" data-property="{videoURL:'70QxE3zJM_8',containment:'#youtube-bg', showControls:false, showYTLogo:true,  autoPlay:true, loop:true, mute:true, startAt:0, stopAt:14, opacity:1, addRaster:false, quality:'default'}">My video</a>
+            <div class="hs-content full-screen">
                 <div class="hs-content-inner">
-                    <div class=" init-animation-2 delay0-4s">
-                        <h1 class="cd-headline letters rotate-2 hs-text-2 font-second">
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible">passionate</b>
-                                    <b>minimalist</b>
-                                    <b>impeccable</b>
-                                    <b>adventurer</b>
-                                </span>
-                            </h1>
+                    <div class="init-animation-2 delay0-4s">
+                        <h1 class="hs-text-4 font-second">Words are not feelings</h1>
                     </div>
-                    <div class="init-animation-2 delay0-6s">
-                        <h2 class="hs-text-6">volar, a template at the heart of the beauty</h2>
+                    <div class="init-animation-2 delay0-6s padding-bottom-30">
+                        <h1 class="hs-text-4 font-second">feel the freedom yourself</h1>
+                    </div>
+                    <div class="init-animation-2 delay0-8s padding-bottom-40 padding-bottom-xs-30">
+                        <p class="hs-text-detail">elegent, smooth, lightweight</p>
+                    </div>
+                    <div class="init-animation-2 delay1-0s padding-top-40 no-padding-xs-top">
+                        <a href="#about-section" class="btn btn-animated btn-split btn-transparent-white ripple-alone" data-text="see our works"><span>see our works</span></a>
                     </div>
                 </div>
                 <span class="scroll-down-arrow in-page-scroll" data-start="display: inline-block" data-100-start="display: none">
@@ -79,8 +79,8 @@
         <!-- Navbar -->
         <div class="position-relative">
             <!-- sticky: 1) remove"transp-nav" class, add class="sticky-navbar" to #nav-wrapper | 2) remove navbar-fixed-top class from #nav [and navbar-transparent class too] -->
-            <div id="nav-wrapper" class="transp-nav">
-                <nav id="nav" class="navbar navbar-fixed-top navbar-transparent navbar-dark ripple-group-parent init-animation-1" role="navigation">
+            <div id="nav-wrapper" class="sticky-navbar">
+                <nav id="nav" class="navbar navbar-default ripple-group-parent" role="navigation">
                     <!-- progressbar -->
                     <div id="scroll-progressbar" class="scroll-progressbar">
                         <div>
@@ -221,7 +221,7 @@
                     <div class="row">
                         <!-- Fact Item -->
                         <div class="col-sm-3 fact-item col-xs-6 margin-bottom-xs-40">
-                            <div class="fact-number font-second">
+                            <div class="fact-number">
                                 <p class="counter">258</p>
                             </div>
                             <div class="fact-text">
@@ -230,7 +230,7 @@
                         </div>
                         <!--/ End Fact Item -->
                         <div class="fact-item col-sm-3 col-xs-6 margin-bottom-xs-40">
-                            <div class="fact-number font-second">
+                            <div class="fact-number">
                                 <p class="counter">1436</p>
                             </div>
                             <div class="fact-text">
@@ -239,7 +239,7 @@
                         </div>
                         <!--/ End Fact Item -->
                         <div class="fact-item col-sm-3 col-xs-6">
-                            <div class="fact-number font-second">
+                            <div class="fact-number">
                                 <p class="counter">27</p>
                             </div>
                             <div class="fact-text">
@@ -248,7 +248,7 @@
                         </div>
                         <!--/ End Fact Item -->
                         <div class="fact-item col-sm-3 col-xs-6">
-                            <div class="fact-number font-second">
+                            <div class="fact-number">
                                 <p class="counter">315</p>
                             </div>
                             <div class="fact-text">
@@ -343,7 +343,7 @@
             <!--/ End Services Section -->
             <hr />
             <!--Start Works Section -->
-            <section id="portfolio-section" class="portfolio-section portfolio-section-light section text-center no-padding-bottom">
+            <section id="portfolio-section" class="portfolio-section section text-center no-padding-bottom">
                 <div class="container">
                     <div class="section-title">
                         <div class=" section-title-more">
@@ -372,103 +372,134 @@
                         </a>
                     </div>
                     <!--/ End Works Buttons -->
-                    <!-- Works Items -->
-                    <ul id="portfolio-container" class="portfolio-container real-gapped colored-mask masonry clearlist row portfolio-hover-effect">
-                        <li class="portfolio-item photo video col-sm-6 col-md-4 col-xs-12">
-                            <div class="portfolio-item-img">
-                                <img src="http://placehold.it/400x260" alt="portfolio" />
-                            </div>
-                            <div class="portfolio-item-info font-second">
-                                <h3 class="portfolio-item-title">sweet nicky</h3>
-                                <div class="portfolio-item-detail">
-                                    <p>apiente accusantium fugiat</p>
-                                    <!-- LightBox Button -->
-                                    <a href="https://vimeo.com/31240369" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1"></a>
-                                    <!--/ End LightBox Button -->
-                                    <a href="project_page.html" class="animsition-link icon-attachment"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <!--/ End Work Item -->
-                        <li class="portfolio-item video col-sm-6 col-md-4 col-xs-12">
-                            <div class="video-work">
-                                <div class="video-background" data-vide-bg="mp4: img/portfolio/work03, webm: img/portfolio/work03, ogv: img/portfolio/work03, poster: img/portfolio/work03" data-vide-options="position: 50% 90%"></div>
-                            </div>
-                            <div class="portfolio-item-img">
-                                <img src="img/portfolio/video-work-real-gapped.png" alt="portfolio video work">
-                            </div>
-                            <div class="portfolio-item-info font-second">
-                                <h3 class="portfolio-item-title">nice lilly</h3>
-                                <div class="portfolio-item-detail">
-                                    <p>Sit amet, consectetur adipi.</p>
-                                    <!-- LightBox Button -->
-                                    <a href="img/portfolio/work03.mp4" data-lightbox-type="iframe" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1"></a>
-                                    <!--/ End LightBox Button -->
-                                    <a href="project_page.html" class="animsition-link icon-attachment"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <!--/ End Work Item -->
-                        <li class="portfolio-item web-design video col-sm-6 col-md-4 col-xs-12">
-                            <div class="portfolio-item-img">
-                                <img src="http://placehold.it/400x480" alt="portfolio" />
-                            </div>
-                            <div class="portfolio-item-info font-second">
-                                <h3 class="portfolio-item-title">fresh gump</h3>
-                                <div class="portfolio-item-detail">
-                                    <p>Nobis blanditiis rerum dolor</p>
-                                    <!-- LightBox Button -->
-                                    <a href="img/portfolio/work04_lg.jpg" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/work04_lg@2x.jpg"></a>
-                                    <!--/ End LightBox Button -->
-                                    <a href="project_page.html" class="animsition-link icon-attachment"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <!--/ End Work Item -->
-                        <li class="portfolio-item photo web-design col-sm-6 col-md-4 col-xs-12">
-                            <div class="portfolio-item-img">
-                                <img src="http://placehold.it/400x460" alt="portfolio" />
-                            </div>
-                            <div class="portfolio-item-info font-second">
-                                <h3 class="portfolio-item-title">fresh gump</h3>
-                                <div class="portfolio-item-detail">
-                                    <p>Nobis blanditiis rerum dolor</p>
-                                    <!-- LightBox Button -->
-                                    <a href="img/portfolio/work05_lg.jpg" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/work05_lg@2x.jpg"></a>
-                                    <!--/ End LightBox Button -->
-                                    <a href="project_page.html" class="animsition-link icon-attachment"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <!--/ End Work Item -->
-                        <li class="portfolio-item photo web-design col-sm-6 col-md-4 col-xs-12">
-                            <div class="portfolio-item-img">
-                                <img src="http://placehold.it/400x240" alt="portfolio" />
-                            </div>
-                            <div class="portfolio-item-info font-second">
-                                <h3 class="portfolio-item-title">creative doe</h3>
-                                <div class="portfolio-item-detail">
-                                    <p>Minus voluptate corporis illo</p>
-                                    <!-- LightBox Button -->
-                                    <a href="img/portfolio/work07_lg.jpg" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/work07_lg@2x.jpg"></a>
-                                    <!--/ End LightBox Button -->
-                                    <a href="project_page.html" class="animsition-link icon-attachment"></a>
-                                </div>
-                            </div>
-                        </li>
-                        <!--/ End Work Item -->
-                    </ul>
-                    <!--/ End Works Items -->
                 </div>
                 <!-- /.container -->
+                <!-- Works Items -->
+                <ul id="portfolio-container" class="portfolio-container masonry clearlist row portfolio-hover-effect">
+                    <li class="portfolio-item photo video col-sm-6 col-md-3 col-xs-12">
+                        <div class="portfolio-item-img">
+                            <img src="http://placehold.it/400x260" alt="portfolio" />
+                        </div>
+                        <div class="portfolio-item-info font-second">
+                            <h3 class="portfolio-item-title">sweet nicky</h3>
+                            <div class="portfolio-item-detail">
+                                <p>apiente accusantium fugiat</p>
+                                <!-- LightBox Button -->
+                                <a href="img/portfolio/work01_lg.jpg" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/work01_lg@2x.jpg"></a>
+                                <!--/ End LightBox Button -->
+                                <a href="project_page.html" class="animsition-link icon-attachment"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--/ End Work Item -->
+                    <li class="portfolio-item video col-sm-6 col-md-3 col-xs-12">
+                        <div class="portfolio-item-img">
+                            <img src="http://placehold.it/400x360" alt="portfolio" />
+                        </div>
+                        <div class="portfolio-item-info font-second">
+                            <h3 class="portfolio-item-title">free alan</h3>
+                            <div class="portfolio-item-detail">
+                                <p>Nihil odio ipsa fugiat</p>
+                                <!-- LightBox Button -->
+                                <a href="https://www.youtube.com/watch?v=3FaVQcEjHUc" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1"></a>
+                                <!--/ End LightBox Button -->
+                                <a href="project_page.html" class="animsition-link icon-attachment"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--/ End Work Item -->
+                    <li class="portfolio-item video col-sm-6 col-md-3 col-xs-12">
+                        <div class="video-work">
+                            <div class="video-background" data-vide-bg="mp4: img/portfolio/work03, webm: img/portfolio/work03, ogv: img/portfolio/work03, poster: img/portfolio/work03" data-vide-options="position: 50% 90%"></div>
+                        </div>
+                        <div class="portfolio-item-img">
+                            <img src="img/portfolio/video-work.png" alt="portfolio video work">
+                        </div>
+                        <div class="portfolio-item-info font-second">
+                            <h3 class="portfolio-item-title">nice lilly</h3>
+                            <div class="portfolio-item-detail">
+                                <p>Sit amet, consectetur adipi.</p>
+                                <!-- LightBox Button -->
+                                <a href="img/portfolio/work03.mp4" data-lightbox-type="iframe" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1"></a>
+                                <!--/ End LightBox Button -->
+                                <a href="project_page.html" class="animsition-link icon-attachment"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--/ End Work Item -->
+                    <li class="portfolio-item web-design video col-sm-6 col-md-3 col-xs-12">
+                        <div class="portfolio-item-img">
+                            <img src="http://placehold.it/400x480" alt="portfolio" />
+                        </div>
+                        <div class="portfolio-item-info font-second">
+                            <h3 class="portfolio-item-title">fresh gump</h3>
+                            <div class="portfolio-item-detail">
+                                <p>Nobis blanditiis rerum dolor</p>
+                                <!-- LightBox Button -->
+                                <a href="img/portfolio/work04_lg.jpg" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/work04_lg@2x.jpg"></a>
+                                <!--/ End LightBox Button -->
+                                <a href="project_page.html" class="animsition-link icon-attachment"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--/ End Work Item -->
+                    <li class="portfolio-item photo web-design col-sm-6 col-md-3 col-xs-12">
+                        <div class="portfolio-item-img">
+                            <img src="http://placehold.it/400x460" alt="portfolio" />
+                        </div>
+                        <div class="portfolio-item-info font-second">
+                            <h3 class="portfolio-item-title">fresh gump</h3>
+                            <div class="portfolio-item-detail">
+                                <p>Nobis blanditiis rerum dolor</p>
+                                <!-- LightBox Button -->
+                                <a href="https://vimeo.com/31240369" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1"></a>
+                                <!--/ End LightBox Button -->
+                                <a href="project_page.html" class="animsition-link icon-attachment"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--/ End Work Item -->
+                    <li class="portfolio-item photo web-design col-sm-6 col-md-3 col-xs-12">
+                        <div class="portfolio-item-img">
+                            <img src="http://placehold.it/400x360" alt="portfolio" />
+                        </div>
+                        <div class="portfolio-item-info font-second">
+                            <h3 class="portfolio-item-title">creative doe</h3>
+                            <div class="portfolio-item-detail">
+                                <p>Minus voluptate corporis illo</p>
+                                <!-- LightBox Button -->
+                                <a href="img/portfolio/work06_lg.jpg" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/work06_lg@2x.jpg"></a>
+                                <!--/ End LightBox Button -->
+                                <a href="project_page.html" class="animsition-link icon-attachment"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--/ End Work Item -->
+                    <li class="portfolio-item photo web-design col-sm-6 col-md-3 col-xs-12">
+                        <div class="portfolio-item-img">
+                            <img src="http://placehold.it/400x240" alt="portfolio" />
+                        </div>
+                        <div class="portfolio-item-info font-second">
+                            <h3 class="portfolio-item-title">creative doe</h3>
+                            <div class="portfolio-item-detail">
+                                <p>Minus voluptate corporis illo</p>
+                                <!-- LightBox Button -->
+                                <a href="img/portfolio/work07_lg.jpg" title="This is an image title" class="icon-magnifying-glass lightbox" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/work07_lg@2x.jpg"></a>
+                                <!--/ End LightBox Button -->
+                                <a href="project_page.html" class="animsition-link icon-attachment"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--/ End Work Item -->
+                </ul>
+                <!--/ End Works Items -->
             </section>
             <!--/ End Works Section -->
             <!-- Project Order Section -->
-            <div class="project-order-section-light in-page-scroll small-section text-center">
-                <a href="#contact-section" class="btn btn-animated btn-split btn-dark ripple-alone" data-text="Have a Project in Mind?"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let's do it then&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+            <div class="project-order-section in-page-scroll small-section text-center">
+                <a href="#contact-section" class="btn btn-animated btn-split btn-colored ripple-alone" data-text="Have a Project in Mind?"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let's do it then&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
             </div>
             <!--/ End Project Order Section -->
-            <hr />
             <!-- Team Section -->
             <section id="team-section" class="team-section section">
                 <div class="container">
@@ -487,8 +518,8 @@
                         <div class="col-sm-6 margin-bottom-xs-40">
                             <p class="section-text">Laboriosam quae vel odit dignissimos maxime quis ab nihil sapiente, a, optio accusamus temporibus veniam assumenda gnissimos maxime quiex rerum repudiandae.</p>
                         </div>
-                        <!-- /.col -->
                     </div>
+                    <!-- /.col -->
                     <!-- /.row -->
                     <!-- Team Items -->
                     <div class="team-items">
@@ -872,7 +903,7 @@
             <!-- Clients Testimonials Section -->
             <section id="client-testimonials" class="client-testimonials section  overlay">
                 <!-- Parallax Image Background -->
-                <div class="parallax-section-bg client-testimonials-bg overlay full-screen" data-center="transform: translate3d(0px, -50%, 0px)" data-top-bottom="transform: translate3d(0px, -25%, 0px)" data-bottom-top="transform: translate3d(0px, -75%, 0px)" data-anchor-target="#client-testimonials"></div>
+                <div class="parallax-section-bg client-testimonials-bg index11 overlay full-screen" data-center="transform: translate3d(0px, -50%, 0px)" data-top-bottom="transform: translate3d(0px, -25%, 0px)" data-bottom-top="transform: translate3d(0px, -75%, 0px)" data-anchor-target="#client-testimonials"></div>
                 <!--/ End Parallax Image Background -->
                 <div class="container">
                     <div class="section-title padding-bottom-40">
@@ -931,19 +962,19 @@
                 <div class="container">
                     <div id="client-logos" class="owl-carousel">
                         <div>
-                            <img src="http://placehold.it/200x80" alt="client logo" />
+                            <img src="http://placehold.it/200x70" alt="client logo" />
                         </div>
                         <div>
-                            <img src="http://placehold.it/200x80" alt="client logo" />
+                            <img src="http://placehold.it/200x70" alt="client logo" />
                         </div>
                         <div>
-                            <img src="http://placehold.it/200x80" alt="client logo" />
+                            <img src="http://placehold.it/200x70" alt="client logo" />
                         </div>
                         <div>
-                            <img src="http://placehold.it/200x80" alt="client logo" />
+                            <img src="http://placehold.it/200x70" alt="client logo" />
                         </div>
                         <div>
-                            <img src="http://placehold.it/200x80" alt="client logo" />
+                            <img src="http://placehold.it/200x70" alt="client logo" />
                         </div>
                     </div>
                 </div>
@@ -1219,7 +1250,7 @@
             <footer class="footer-section section no-padding-bottom">
                 <!-- footer logo -->
                 <div class="footer-logo">
-                        <img src="http://placehold.it/200x70" alt="logo" />
+                    <img src="http://placehold.it/200x70" alt="logo" />
                     <p class="font-second">
                         volar
                     </p>
