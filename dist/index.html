@@ -1,828 +1,632 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Volar</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Animation Libraries -->
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/magic.min.css">
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900%7COpen+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-    <!-- Fonts Icons -->
-    <link rel="stylesheet" href="css/custom-icons.css">
-    <link rel="stylesheet" href="css/et-line-icons.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- Nivo Lightbox -->
-    <link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css">
-    <link rel="stylesheet" href="css/nivo-lightbox/lightbox-theme.css">
-    <!-- Animated Headlines -->
-    <link rel="stylesheet" href="css/animated-hedlines.css">
-    <!-- Youtube Background Player -->
-    <link rel="stylesheet" href="css/YTPlayer.css">
-    <!-- Main Styles -->
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- Theme -->
-    <link href="css/theme/purple.css" rel="stylesheet" data-color="" id="theme">
-    <!-- Animsition -->
-    <link href="css/animsition.min.css" rel="stylesheet">
-    <!-- Favicon (retina) -->
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-    <meta name="application-name" content="&nbsp;" />
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-</head>
+    <head>
+        <title>Lemuel Foreman</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<body>
-    <!-- Page Wrapper -->
-    <div id="page" class="animsition equal" data-loader-type="loader2" data-page-loader-text="Volar" data-animsition-in="fade-in-up-sm" data-animsition-out="fade-out-up-sm" style="transform-origin: 50% 50vh;">
-        <div id="top"></div>
-        <!-- Home Section -->
-        <section id="home-section" class="home-section full-screen">
-            <div id="youtube-bg" class="youtube-bg overlay full-screen">
-            </div>
-            <a id="video" class="player" data-property="{videoURL:'bc3YCRDjCys',containment:'#youtube-bg', showControls:false, showYTLogo:true,  autoPlay:true, loop:true, mute:true, startAt:0, stopAt:14, opacity:1, addRaster:false, quality:'default'}">My video</a>
-            <div class="hs-content full-screen">
-                <div class="hs-content-inner">
-                    <div class="init-animation-2 delay0-4s">
-                        <h1 class="hs-text-4 font-second">Words are not feelings</h1>
-                    </div>
-                    <div class="init-animation-2 delay0-6s padding-bottom-30">
-                        <h1 class="hs-text-4 font-second">feel the freedom yourself</h1>
-                    </div>
-                    <div class="init-animation-2 delay0-8s padding-bottom-40 padding-bottom-xs-30">
-                        <p class="hs-text-detail">elegent, smooth, lightweight</p>
-                    </div>
-                    <div class="init-animation-2 delay1-0s padding-top-40 no-padding-xs-top">
-                        <a href="#about-section" class="btn btn-animated btn-split btn-transparent-white ripple-alone" data-text="see our works"><span>see our works</span></a>
-                    </div>
+        <!-- Favicons
+        ================================================== -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+        <!-- CSS
+        ================================================== -->
+        <link rel="stylesheet" href="css/common.css" type="text/css">
+        <link rel="stylesheet" href="css/responsive.css" type="text/css">
+
+        <!-- Load jQuery
+        ================================================== -->
+        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="preloader">
+            <div id="status" class="bulat">
+                <div id="dalbulat"> 
+                    <span>L</span>
+                    <span>O</span>
+                    <span>A</span>
+                    <span>D</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>G</span>
                 </div>
-                <span class="scroll-down-arrow in-page-scroll" data-start="display: inline-block" data-100-start="display: none">
-                    <a href="#about-section" class="ci-icon-uniE930 init-animation-2 delay1-8s"></a>
-                </span>
+
+                <div class="luarbulat"></div>
             </div>
-        </section>
-        <!--/ End Home Section -->
-        <!-- Navbar -->
-        <div class="position-relative">
-            <!-- sticky: 1) remove"transp-nav" class, add class="sticky-navbar" to #nav-wrapper | 2) remove navbar-fixed-top class from #nav [and navbar-transparent class too] -->
-            <div id="nav-wrapper" class="sticky-navbar">
-                <nav id="nav" class="navbar navbar-default ripple-group-parent" role="navigation">
-                    <!-- progressbar -->
-                    <div id="scroll-progressbar" class="scroll-progressbar">
-                        <div>
-                            <span class="scroll-shadow"></span>
-                        </div>
-                    </div>
-                    <div class="container in-page-scroll">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" id="animated-navicon" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand ripple-group" href="#top">
-                                <div class="navbar-logo pull-left">
-                                    <img src="http://placehold.it/100x40" alt="logo" />
-                                </div>
-                                <p class="pull-left font-second">volar</p>
-                            </a>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="mobile-navbar-collapse">
-                            <ul class="nav navbar-nav navbar-right cl-effect-5">
-                                <li>
-                                    <a class="ripple-group" href="#top">
-                                        <span data-hover="home">home</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="ripple-group" href="#about-section">
-                                        <span data-hover="about">about</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="ripple-group" href="#services-section">
-                                        <span data-hover="services">services</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="ripple-group" href="#portfolio-section">
-                                        <span data-hover="portfolio">portfolio</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="ripple-group" href="#team-section">
-                                        <span data-hover="team">team</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="ripple-group" href="#process-section">
-                                        <span data-hover="process">process</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="ripple-group animsition-link" href="blog.html">
-                                        <span data-hover="blog">blog</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="ripple-group" href="#contact-section">
-                                        <span data-hover="contact">contact</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
-                    <!-- /.container -->
+        </div>
+
+        <header id="header-section">
+            <div class="container">
+                <a id="site-logo" href="index.html">Lemuel Foreman</a>
+
+                <a href="javascript:void(0);" id="menu_link">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <nav id="navigation" class="navigation" role="navigation">
+                    <ul>
+                        <li><a class="text-hover-color current" href="#slider-section">Home</a></li>
+                        <li><a class="text-hover-color" href="#about-section">About</a></li>
+                        <li><a class="text-hover-color" href="#portfolio-section">portfolio</a></li>
+                        <li><a class="text-hover-color" href="#blog-section">blog</a></li>
+                        <li><a class="text-hover-color" href="#contact-section">contact</a></li>
+                    </ul>
                 </nav>
             </div>
-        </div>
-        <!--/ End Navbar -->
-        <div id="page-2">
-            <!-- About Section -->
-            <section id="about-section" class="about-section section">
-                <div class="container">
-                    <div class="section-title">
-                        <div class=" section-title-more">
-                            first you should know
-                        </div>
-                        <div>
-                            <h2 class="section-title-heading">about <span>the studio</span></h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 wow fadeInUp margin-bottom-xs-40">
-                            <blockquote class=" about-quote wow fadeInUp" data-wow-delay="0s">
-                                <p>"We are a new creative studuio. veritatis, eosquiso uam asperi oresipsum itaque dignissimos reprehen derit. non quos ratione ipsa facilisis."</p>
-                                <footer class="">john doe
-                                </footer>
-                            </blockquote>
-                            <p class="section-text wow fadeInUp" data-wow-delay=".3s">Provident saepe deserunt, accusamus quiatetur, mollitia fugit sedar itectoia samus one ipsa facilisis eot.</p>
-                        </div>
-                        <!--/.col -->
-                        <div id="skillbars" class="skillbars col-sm-6">
-                            <div class="skillbar-container wow fadeInUp animated" data-wow-delay="0s">
-                                <p class="skillbar-title">Branding
-                                    <span>54%</span>
-                                </p>
-                                <!-- Skill Bar Precent_ to change the percent change the data-percent="..." -->
-                                <div class="skillbar">
-                                    <div class="skillbar-bar" data-percent="54%"></div>
-                                </div>
-                            </div>
-                            <!--/ End Skill Bar -->
-                            <div class="skillbar-container wow fadeInUp animated" data-wow-delay=".3s">
-                                <p class="skillbar-title">graphic design
-                                    <span>74%</span>
-                                </p>
-                                <div class="skillbar">
-                                    <div class="skillbar-bar delay0-4s" data-percent="74%"></div>
-                                </div>
-                            </div>
-                            <!--/ End Skill Bar -->
-                            <div class="skillbar-container wow fadeInUp animated" data-wow-delay=".6s">
-                                <p class="skillbar-title">motion graphic
-                                    <span>63%</span>
-                                </p>
-                                <div class="skillbar">
-                                    <div class="skillbar-bar delay0-8s" data-percent="63%"></div>
-                                </div>
-                            </div>
-                            <!--/ End Skill Bar -->
-                        </div>
-                        <!--/.col -->
-                    </div>
-                    <!--/.row -->
-                </div>
-                <!--/.container -->
-            </section>
-            <!--/ End About Section -->
-            <hr />
-            <hr />
-            <!-- Team Section -->
-            <section id="team-section" class="team-section section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="section-title">
-                                <div class=" section-title-more">
-                                    get to know our
-                                </div>
-                                <div>
-                                    <h2 class="section-title-heading"><span>team </span>members</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-sm-6 margin-bottom-xs-40">
-                            <p class="section-text">Laboriosam quae vel odit dignissimos maxime quis ab nihil sapiente, a, optio accusamus temporibus veniam assumenda gnissimos maxime quiex rerum repudiandae.</p>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- /.row -->
-                    <!-- Team Items -->
-                    <div class="team-items">
-                        <!-- Team Carousel -->
-                        <div id="team-carousel" class="team-carousel owl-carousel carousel dots-under">
-                            <!-- Team Item -->
-                            <div class="team-item">
-                                <!-- Team Item Image -->
-                                <div class="team-item-img">
-                                    <img src="http://placehold.it/480x640" alt="team member" />
-                                </div>
-                                <!--/ End Team Item Imagee -->
-                                <!-- Team Item Name -->
-                                <div class="team-item-name font-second">
-                                    <h4 class="">miranda lawson</h4>
-                                    <span>art director</span>
-                                </div>
-                                <!--/ End Team Item Name -->
-                                <!-- Team Item Info -->
-                                <div class="team-item-info">
-                                    <div class="team-item-text">
-                                        <h3 class="font-second">get in <span>touch ..</span></h3>
-                                        <p>Spudiandae nesciunt, eosihil praesentium soluta natus eaque..</p>
-                                    </div>
-                                    <div class="skillbar-container">
-                                        <p class="skillbar-title font-second">Javascript
-                                            <span>54%</span>
-                                        </p>
-                                        <!-- Skill Bar Precent_ to change the percent change the data-percent="..." -->
-                                        <div class="skillbar">
-                                            <div class="skillbar-bar" data-percent="54%"></div>
-                                        </div>
-                                    </div>
-                                    <!--/ End Skill Bar -->
-                                    <div class="skillbar-container">
-                                        <p class="skillbar-title font-second">Ruby
-                                            <span>99%</span>
-                                        </p>
-                                        <div class="skillbar">
-                                            <div class="skillbar-bar delay0-2s" data-percent="99%"></div>
-                                        </div>
-                                    </div>
-                                    <!--/ End Skill Bar -->
-                                    <ul class="team-item-social clearlist">
-                                        <li>
-                                            <a href="#." class="fa fa-facebook-square"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class=" fa fa-twitter"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class="fa fa-pinterest"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--/ End Team Item Info -->
-                            </div>
-                            <!--/ End Team Item -->
-                            <!-- Team Item -->
-                            <div class="team-item">
-                                <!-- Team Item Image -->
-                                <div class="team-item-img">
-                                    <img src="http://placehold.it/480x640" alt="team member" />
-                                </div>
-                                <!--/ End Team Item Image -->
-                                <!-- Team Item Name -->
-                                <div class="team-item-name font-second">
-                                    <h4 class="">Garrus Vakarian</h4>
-                                    <span>project manager</span>
-                                </div>
-                                <!--/ End Team Item Name -->
-                                <!-- Team Item Info -->
-                                <div class="team-item-info">
-                                    <div class="team-item-text">
-                                        <h3 class="font-second"><span>love</span> the nature</h3>
-                                        <p>Mlestias dicta digre dolorumor ipsum ut aut. Distinctio, inventore!</p>
-                                    </div>
-                                    <div class="skillbar-container">
-                                        <p class="skillbar-title font-second">jQuery
-                                            <span>75%</span>
-                                        </p>
-                                        <!-- Skill Bar Precent_ to change the percent change the data-percent="..." -->
-                                        <div class="skillbar">
-                                            <div class="skillbar-bar" data-percent="75%"></div>
-                                        </div>
-                                    </div>
-                                    <!--/ End Skill Bar -->
-                                    <div class="skillbar-container">
-                                        <p class="skillbar-title font-second">CSS3
-                                            <span>90%</span>
-                                        </p>
-                                        <div class="skillbar">
-                                            <div class="skillbar-bar delay0-2s" data-percent="90%"></div>
-                                        </div>
-                                    </div>
-                                    <!--/ End Skill Bar -->
-                                    <ul class="team-item-social clearlist">
-                                        <li>
-                                            <a href="#." class="fa fa-facebook-square"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class=" fa fa-twitter"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class="fa fa-skype"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class="fa fa-pinterest"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--/ End Item Info -->
-                            </div>
-                            <!--/ End Team Item -->
-                            <!-- Team Item -->
-                            <div class="team-item">
-                                <!-- Team Item Image -->
-                                <div class="team-item-img">
-                                    <img src="http://placehold.it/480x640" alt="team member" />
-                                </div>
-                                <!--/ End Team Item Image -->
-                                <!-- Team Item Name -->
-                                <div class="team-item-name font-second">
-                                    <h4 class="">Steven Hackett</h4>
-                                    <span>web designer</span>
-                                </div>
-                                <!--/ End Team Item Name -->
-                                <!-- Team Item Info -->
-                                <div class="team-item-info">
-                                    <div class="team-item-text">
-                                        <h3 class="font-second">Let's <span>roll.</span></h3>
-                                        <p>Labore earum ius iure. Placeat tempore optio omnis beatae.</p>
-                                    </div>
-                                    <div class="skillbar-container">
-                                        <p class="skillbar-title font-second">Photoshop
-                                            <span>81%</span>
-                                        </p>
-                                        <!-- Skill Bar Precent_ to change the percent change the data-percent="..." -->
-                                        <div class="skillbar">
-                                            <div class="skillbar-bar" data-percent="81%"></div>
-                                        </div>
-                                    </div>
-                                    <!--/ End Skill Bar -->
-                                    <div class="skillbar-container">
-                                        <p class="skillbar-title font-second">Illustrator
-                                            <span>68%</span>
-                                        </p>
-                                        <div class="skillbar">
-                                            <div class="skillbar-bar delay0-2s" data-percent="68%"></div>
-                                        </div>
-                                    </div>
-                                    <!--/ End Skill Bar -->
-                                    <ul class="team-item-social clearlist">
-                                        <li>
-                                            <a href="#." class=" fa fa-twitter"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class="fa fa-skype"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class="fa fa-pinterest"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--/ End Item Info -->
-                            </div>
-                            <!--/ End Team Item -->
-                            <!-- Team Item -->
-                            <div class="team-item">
-                                <!-- Team Item Image -->
-                                <div class="team-item-img">
-                                    <img src="http://placehold.it/480x640" alt="team member" />
-                                </div>
-                                <!--/ End Team Item Image -->
-                                <!-- Team Item Name -->
-                                <div class="team-item-name font-second">
-                                    <h4 class="">Sansa Stark</h4>
-                                    <span>Photoshp Expert</span>
-                                </div>
-                                <!--/ End Team Item Name -->
-                                <!-- Team Item Info -->
-                                <div class="team-item-info">
-                                    <div class="team-item-text">
-                                        <h3 class="font-second"><span>believe</span> in yourself - !</h3>
-                                        <p>Simos ni nemo veritatis asperiores averienetur rati.</p>
-                                    </div>
-                                    <div class="skillbar-container">
-                                        <p class="skillbar-title font-second">Photoshop
-                                            <span>99%</span>
-                                        </p>
-                                        <!-- Skill Bar Precent_ to change the percent change the data-percent="..." -->
-                                        <div class="skillbar">
-                                            <div class="skillbar-bar" data-percent="81%"></div>
-                                        </div>
-                                    </div>
-                                    <!--/ End Skill Bar -->
-                                    <div class="skillbar-container">
-                                        <p class="skillbar-title font-second">Illustrator
-                                            <span>78%</span>
-                                        </p>
-                                        <div class="skillbar">
-                                            <div class="skillbar-bar delay0-2s" data-percent="68%"></div>
-                                        </div>
-                                    </div>
-                                    <!--/ End Skill Bar -->
-                                    <ul class="team-item-social clearlist">
-                                        <li>
-                                            <a href="#." class="fa fa-facebook-square"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class=" fa fa-twitter"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class="fa fa-skype"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class="fa fa-pinterest"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--/ End Item Info -->
-                            </div>
-                            <!--/ End Team Item -->
-                            <!-- Team Item -->
-                            <div class="team-item">
-                                <!-- Team Item Image -->
-                                <div class="team-item-img">
-                                    <img src="http://placehold.it/480x640" alt="team member" />
-                                </div>
-                                <!--/ End Team Item Image -->
-                                <!-- Team Item Name -->
-                                <div class="team-item-name font-second">
-                                    <h4 class="">Philip owen</h4>
-                                    <span>Sales Manager</span>
-                                </div>
-                                <!--/ End Team Item Name -->
-                                <!-- Team Item Info -->
-                                <div class="team-item-info">
-                                    <div class="team-item-text">
-                                        <h3 class="font-second"><span>Fly</span> with me ..</h3>
-                                        <p>Noi nemo veritatis asperiores fimos averienetur rati.</p>
-                                    </div>
-                                    <div class="skillbar-container">
-                                        <p class="skillbar-title font-second">Photography
-                                            <span>175%</span>
-                                        </p>
-                                        <!-- Skill Bar Precent_ to change the percent change the data-percent="..." -->
-                                        <div class="skillbar">
-                                            <div class="skillbar-bar" data-percent="81%"></div>
-                                        </div>
-                                    </div>
-                                    <!--/ End Skill Bar -->
-                                    <div class="skillbar-container">
-                                        <p class="skillbar-title font-second">production managment
-                                            <span>88%</span>
-                                        </p>
-                                        <div class="skillbar">
-                                            <div class="skillbar-bar delay0-2s" data-percent="68%"></div>
-                                        </div>
-                                    </div>
-                                    <!--/ End Skill Bar -->
-                                    <ul class="team-item-social clearlist">
-                                        <li>
-                                            <a href="#." class="fa fa-facebook-square"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class=" fa fa-twitter"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#." class="fa fa-skype"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--/ End Item Info -->
-                            </div>
-                            <!--/ End Team Item -->
-                        </div>
-                        <!--/ End Team Carousel -->
-                    </div>
-                    <!--/ End Team Items -->
-                </div>
-                <!-- /.container -->
-            </section>
-            <!--/ End Team Section -->
-            <hr />
-            <!-- Process Section -->
-            <!--/ End Process Section -->
-            <!-- Clients Logos -->
-            <div class="client-logos small-section">
-                <div class="container">
-                    <div id="client-logos" class="owl-carousel">
-                        <div>
-                            <img src="http://placehold.it/200x70" alt="client logo" />
-                        </div>
-                        <div>
-                            <img src="http://placehold.it/200x70" alt="client logo" />
-                        </div>
-                        <div>
-                            <img src="http://placehold.it/200x70" alt="client logo" />
-                        </div>
-                        <div>
-                            <img src="http://placehold.it/200x70" alt="client logo" />
-                        </div>
-                        <div>
-                            <img src="http://placehold.it/200x70" alt="client logo" />
-                        </div>
-                    </div>
-                </div>
-                <!--/ .container -->
-            </div>
-            <!--/ End Clients Logos -->
-            <hr />
-            <!-- Pricing Section -->
-            <section id="pricing-section" class="pricing-section section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="section-title">
-                                <div class=" section-title-more">
-                                    now choose on of our
-                                </div>
-                                <div>
-                                    <h1 class="section-title-heading"><span>plans</span> available</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 padding-top-10">
-                            <p class="section-text">Laboriosam quae vel odit dignissimos maxime quis ab nihil sapiente, a, optio accusamus temporibus verniam.</p>
-                        </div>
-                    </div>
-                    <div class="row padding-top-20">
-                        <div class="col-sm-4 margin-bottom-xs-40 wow fadeInUpLeftScale">
-                            <div class="pricing-table">
-                                <div class="pricing-header font-second">
-                                    <h3>Basic</h3>
-                                    <div class="price">
-                                        <span class="currency">$</span>
-                                        <span class="value">30</span>
-                                        <span class="duration">mo</span>
-                                    </div>
-                                </div>
-                                <!--/ .pricing-header -->
-                                <div class="pricing-body">
-                                    <ul class="pricing-features">
-                                        <li><em>256MB</em> Memory</li>
-                                        <li><em>1</em> User</li>
-                                        <li><em>1</em> Website</li>
-                                        <li><em>Unlimited</em> Bandwidth</li>
-                                        <li><em>24/7</em> Support</li>
-                                    </ul>
-                                </div>
-                                <!--/ .pricing-body -->
-                                <footer class="pricing-footer">
-                                    <a class="hidden-xs btn btn-animated btn-split ripple-alone btn-default" data-text="Select"><span>good choice</span></a>
-                                    <a class="select visible-xs" href="#.">
-                                        <i class="icon ci-icon-uniE890"></i>
-                                    </a>
-                                </footer>
-                                <!--/ .pricing-footer -->
-                            </div>
-                        </div>
-                        <!--/ .col -->
-                        <div class="popular col-sm-4 margin-bottom-xs-40 wow fadeInUpScale">
-                            <div class="pricing-table">
-                                <div class="pricing-header font-second">
-                                    <h3>Popular</h3>
-                                    <div class="price">
-                                        <span class="currency">$</span>
-                                        <span class="value">60</span>
-                                        <span class="duration">mo</span>
-                                    </div>
-                                </div>
-                                <!--/ .pricing-header -->
-                                <div class="pricing-body">
-                                    <ul class="pricing-features">
-                                        <li><em>512MB</em> Memory</li>
-                                        <li><em>3</em> Users</li>
-                                        <li><em>5</em> Websites</li>
-                                        <li><em>Unlimited</em> Bandwidth</li>
-                                        <li><em>24/7</em> Support</li>
-                                    </ul>
-                                </div>
-                                <!-- /.pricing-body -->
-                                <footer class="pricing-footer">
-                                    <a class="hidden-xs btn btn-animated btn-split ripple-alone btn-default" data-text="Select"><span>exellent</span></a>
-                                    <a class="select visible-xs" href="#.">
-                                        <i class="icon ci-icon-uniE890"></i>
-                                    </a>
-                                </footer>
-                                <!--/ .pricing-footer -->
-                            </div>
-                        </div>
-                        <!--/ .col -->
-                        <div class="col-sm-4 wow fadeInUpRightScale">
-                            <div class="pricing-table">
-                                <div class="pricing-header font-second">
-                                    <h3>Premier</h3>
-                                    <div class="price">
-                                        <span class="currency">$</span>
-                                        <span class="value">90</span>
-                                        <span class="duration">mo</span>
-                                    </div>
-                                </div>
-                                <!--/ .pricing-header -->
-                                <div class="pricing-body">
-                                    <ul class="pricing-features">
-                                        <li><em>1024MB</em> Memory</li>
-                                        <li><em>5</em> Users</li>
-                                        <li><em>10</em> Websites</li>
-                                        <li><em>Unlimited</em> Bandwidth</li>
-                                        <li><em>24/7</em> Support</li>
-                                    </ul>
-                                </div>
-                                <!--/ .pricing-body -->
-                                <footer class="pricing-footer">
-                                    <a class="hidden-xs btn btn-animated btn-split ripple-alone btn-default" data-text="select"><span>go for the top</span></a>
-                                    <a class="select visible-xs" href="#.">
-                                        <i class="icon ci-icon-uniE890"></i>
-                                    </a>
-                                </footer>
-                                <!--/ .pricing-footer -->
-                            </div>
-                        </div>
-                        <!--/ .col -->
-                    </div>
-                    <!--/ .row -->
-                </div>
-                <!--/ .container -->
-            </section>
-            <!--/ End Pricing Section -->
-            <hr />
-            <!-- Contact Section -->
-            <section id="contact-section" class="section contact-section">
-                <div class="container">
-                    <div class="section-title">
-                        <div class=" section-title-more">
-                            wanna say hello?
-                        </div>
-                        <div>
-                            <h2 class="section-title-heading"><span>contact</span> us</h2>
-                        </div>
-                    </div>
-                    <div class="row padding-bottom-sm-90">
-                        <div class="col-sm-4">
-                            <div class="contact-item margin-bottom-xs-40"><i class="icon-phone"></i>
-                                <p>Phone: (555) 123-4567
-                                    <br />Fax: (555) 987-6543</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="contact-item margin-bottom-xs-40"><i class="icon-map-pin"></i>
-                                <p>412 Throop Ave, Brooklyn,
-                                    <br />NY 11221, USA</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="contact-item margin-bottom-xs-40"><i class="icon-envelope"></i>
-                                <p>contact@company.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-10">
-                            <form id="ajax-contact" class="" method="post" action="mailer.php">
-                                <fieldset>
-                                    <div class="row">
-                                        <div class="input col-xs-12 col-sm-12 padding-bottom-xs-50 padding-bottom-40">
-                                            <label class="input-label" for="name">
-                                                <span class="input-label-content font-second" data-content="name">name *</span>
-                                            </label>
-                                            <input class="input-field" type="text" name="name" id="name" required />
-                                        </div>
-                                        <div class="input col-xs-12 col-sm-6 padding-bottom-xs-50 padding-bottom-50">
-                                            <label class="input-label" for="email">
-                                                <span class="input-label-content font-second" data-content="email">email *</span>
-                                            </label>
-                                            <input class="input-field" type="email" name="email" id="email" required />
-                                        </div>
-                                        <div class="input col-xs-12 col-sm-6 padding-bottom-xs-60 padding-bottom-50">
-                                            <label class="input-label" for="company">
-                                                <span class="input-label-content font-second" data-content="company">company</span>
-                                            </label>
-                                            <input class="input-field" type="text" name="company" id="company" />
-                                        </div>
-                                        <div class="message col-xs-12 col-sm-12 padding-bottom-xs-40 padding-bottom-30">
-                                            <label class="textarea-label font-second" for="message">message *</label>
-                                            <textarea class="input-field textarea" name="message" id="message" required></textarea>
-                                        </div>
-                                    </div>
-                                    <div id="form-messages" class="form-message"></div>
-                                    <div class="col-xs-12 margin-top-30 text-center">
-                                        <button id="btn-submit" type="submit" class="btn btn-animated btn-contact ripple-alone" data-text="send it"><span class="btn-icon"><span class="loader-parent"><span class="loader3"></span></span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </fieldset>
-                            </form>
-                            <!--/ End form -->
-                        </div>
-                        <!--/ .col -->
-                    </div>
-                    <!--/ .row -->
-                </div>
-                <!--/ .container -->
-            </section>
-            <!--/ End Contact Section -->
-            <!--/ Map Section -->
-            <div id="map-section" class="map-section">
-                <!-- map opener -->
-                <div id="map-opener" class="map-mask">
-                    <div class="map-opener">
-                        <div class="font-second">locate us on the map<i class="ci-icon-uniE930"></i></div>
-                        <div class="font-second">close the map<i class="ci-icon-uniE92F"></i></div>
-                    </div>
-                </div>
-                <!--/ End map opener -->
-                <div id="google-map">
-                    <div id="map-canvas" data-address="412 Throop Ave, Brooklyn, NY 11221, USA"></div>
-                    <div id="map-zoom-in"></div>
-                    <div id="map-zoom-out"></div>
-                </div>
-            </div>
-            <!--/ End Map Section -->
-            <!-- Footer Section -->
-            <footer class="footer-section section no-padding-bottom">
-                <!-- footer logo -->
-                <div class="footer-logo">
-                    <img src="http://placehold.it/200x70" alt="logo" />
-                    <p class="font-second">
-                        volar
-                    </p>
-                </div>
-                <!--/ End footer logo -->
-                <!-- Social icons -->
-                <div class="footer-social">
-                    <a href="#." class="fa fa-facebook-square wow fadeIn" data-wow-offset="150" data-wow-delay="0s"></a>
-                    <a href="#." class="fa fa-twitter wow fadeIn" data-wow-offset="150" data-wow-delay=".15s"></a>
-                    <a href="#." class="fa fa-google-plus wow fadeIn" data-wow-offset="150" data-wow-delay=".3s"></a>
-                    <a href="#." class="fa fa-pinterest wow fadeIn" data-wow-offset="150" data-wow-delay=".45s"></a>
-                    <a href="#." class="fa fa-youtube-play wow fadeIn" data-wow-offset="150" data-wow-delay=".6s"></a>
-                </div>
-                <!--/ End Social icons -->
-                <!-- go top pop-up -->
-                <div id="go-top" class="go-top go-top-out in-page-scroll">
-                    <div class="circle1"></div>
-                    <a href="#top" class="square"><span></span></a>
-                    <div class="rectangle"></div>
-                    <div class="circle2"></div>
-                </div>
-                <!--/ End go top pop-up -->
-                <div class="footer-bottom">
-                    <!-- Copyright -->
-                    <a class="footer-bottom-text font-second" href="http://themeforest.net/item/volar-one-page-parallax-template/11698815" target="_blank">Volar © 2015. All Right Reserved.</a>
-                    <!-- End Copyright -->
-                </div>
-            </footer>
-            <!--/ End Footer Section -->
-        </div>
-        <!--/ #page-2 -->
-    </div>
-    <!--/ #page -->
-    <!-- JS Scripts -->
-    <script src="js/modernizr.min.js"></script>
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/jquery.easing.1.3.min.js"></script>
-    <script src="js/jquery.animsition.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/skrollr.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/animateSlider.js"></script>
-    <script src="js/animated-headlines.js"></script>
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
-    <script src="js/jquery.vide.min.js"></script>
-    <script src="js/jquery.particleground.min.js"></script>
-    <script src="js/fss.min.js"></script>
-    <script src="js/fssinit.js"></script>
-    <script src="js/retina.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/nivo-lightbox.min.js"></script>
-    <script src="js/contactForm.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="js/scripts.min.js"></script>
-    <!--/ End JS Scripts -->
-</body>
+        </header>
 
+        <div class="nav-waypoint">
+            <section id="slider-section" class="">
+                <div>
+                    <div class="container">
+                        <aside>
+                            <div>
+                                <nav class="navigation">
+                                    <ul>
+                                        <li><a class="text-hover-color" href="#slider-section">Home</a></li>
+                                        <li><a class="text-hover-color" href="#about-section">About</a></li>
+                                        <li><a class="text-hover-color" href="#portfolio-section">portfolio</a></li>
+                                        <li><a class="text-hover-color" href="#blog-section">blog</a></li>
+                                        <li><a class="text-hover-color" href="#contact-section">contact</a></li>
+                                    </ul>
+                                </nav>
+
+                                <div id="social-link">
+                                    <a href="#">twitter</a>
+                                    <a href="#">vimeo</a>
+                                    <a href="#">facebook </a>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <div id="slider-text">
+                            <div>
+                                <p>Lemuel <br />Foreman</p>
+
+                                <a class="btn-color-white" href="#about-section">
+                                    <span data-hover="get in touch">get in touch</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slides">
+                    <div class="slides-container">
+                        <img src="images/slide/1.jpg" />
+                        <img src="images/slide/2.jpg" />
+                        <img src="images/slide/3.jpg" />
+                        <img src="images/slide/4.jpg" />
+                        <img src="images/slide/5.jpg" />
+                        <img src="images/slide/6.jpg" />
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="nav-waypoint">
+            <section id="about-section" class="page-section">
+                <div class="container">
+                    <div class="table-row">
+                        <div class="cell">
+                            <div id="profile" class="cell">
+                                <h1 class="section-title">About</h1>
+
+                                <img src="images/profile_photo.jpg" alt="single photo" />
+
+                                <span>
+                                    “ Vestibulum eu metus nulla. Donec gravida mollis est non posuere. Quisque massa massa, tempor vitae tortor in, ultrices lobortis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc semper, orci et convallis tristique”
+                                </span>
+                            </div>
+
+                            <div id="profile-text" class="cell">
+                                <span>hi, my name is Lemuel Foreman. i’m photographer</span>
+
+                                <p>
+                                    Aenean sagittis tortor quis nisl aliquet at rutrum nisi posuere. Ut sollicitudin congue orci sed aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum, elit ac fermentum egestas, tortor ante vestibulum est, eget scelerisque nisl velit eget tellus.
+                                </p>
+
+                                <p>
+                                    Fusce porta facilisis luctus. Integer neque dolor, rhoncus nec euismod eget, pharetra et tortor. Nulla id pulvinar nunc. Vestibulum auctor nisl vel lectus ullamcorper sed pellentesque dolor eleifend. Praesent lobortis magna vel diam mattis sagittis.
+                                </p>
+
+                                <p>
+                                    Mauris porta odio eu risus scelerisque id facilisis ipsum dictum. Donec fringilla pharetra sapien eget imperdiet. Vivamus iaculis ultricies mauris id posuere. Praesent mollis tincidunt diam, in sagittis odio tincidunt congue. Aliquam laoreet neque sit amet tortor pretium ut volutpat nunc iaculis.  Nunc a enim pretium orci bibendum tempor. Fusce nec libero eget
+                                </p>
+
+                                <img src="images/autograph.png" />
+                            </div>
+                        </div>
+
+                        <div id="profile-category" class="cell">
+                            <div>
+                                <a href="#" class="opacity-box">
+                                    <span class="title">wedding</span>
+
+                                    Praesent tempus ligula augue, vel dapibus tortor vestibulum ac. Cras ut purus volutpat, condimentum sem varius, dictum libero.
+                                </a>
+                            
+                                <a href="#" class="opacity-box">
+                                    <span class="title">fashion</span>
+
+                                    Nulla venenatis tristique tortor at pharetra. Integer porta sem odio, et aliquam ipsum interdum id. Quisque urna tortor, facilisis quis mauris
+                                </a>
+                            </div>
+                            
+                            <div>
+                                <a href="#" class="opacity-box">
+                                    <span class="title">nature</span>
+
+                                    Etiam eu felis purus. Nunc nec suscipit mauris. Vestibulum faucibus accumsan tempor. Etiam quis nisi sagittis, rutrum odio vitae,
+                                </a>
+                            
+                                <a href="#" class="opacity-box">
+                                    <span class="title">kids</span>
+
+                                    Nunc et vestibulum lacus. Duis venenatis, massa fermentum adipiscing congue, lacus lacus vulputate eros, vitae euismod quam
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="parallax-section-1" class="parallax-section" data-type="background">
+                <div class="parallax-section-inner">
+                    <div class="container">
+                        <div class="parallax-content twitter-post">
+                            <i class="icon-twitter-bird"></i>
+
+                            <p>
+                               <span class="text-color">about 8 days ago</span> Praesent in purus erat. Pellentesque ac rhoncus lacus. Nam imperdiet egestas nisl id pulvinar. Donec non ante egestas, tincidunt quam vel, luctus ligula. Aliquam feugiat pulvinar porttitor. Praesent quis tristique orci. Pellentesque euismod nunc libero, in tristique neque rutrum et
+                            </p>
+
+                            <a class="btn-color" href="#">follow me</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="nav-waypoint">
+            <section id="portfolio-section" class="page-section with-black-side">
+                <div class="container">
+                    <h1 class="section-title opacity-box">Portfolio</h1>
+                </div>
+
+                <div id="portfolio-slider-wrapper" class="opacity-box">
+                    <div id="portfolio-slider">
+                        <div class="overlay"></div>
+
+                        <div class="slides-container">
+                            <img src="images/portfolio_img/slide_1.jpg" />
+
+                            <img src="images/portfolio_img/slide_2.jpg" />
+
+                            <img src="images/portfolio_img/slide_3.jpg" />
+
+                            <img src="images/portfolio_img/slide_4.jpg" />
+
+                            <img src="images/portfolio_img/slide_5.jpg" />
+
+                            <img src="images/portfolio_img/slide_6.jpg" />
+                        </div>
+
+                        <nav class="slides-navigation">
+                            <a href="#" class="prev icon-left-open"></a>
+                            <a href="#" class="next icon-right-open"></a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div id="portfolio-carousel-wrapper" class="opacity-box">
+                    <ul id="portfolio-carousel">
+                        <li class="slide">
+                            <div class="img-wrap" >
+                                <img src="images/portfolio_img/carousel_1.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_1.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="img-wrap">
+                                <img src="images/portfolio_img/carousel_2.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_2.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="slide">
+                            <div class="img-wrap">
+                                <img src="images/portfolio_img/carousel_3.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_3.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="img-wrap">
+                                <img src="images/portfolio_img/carousel_4.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_4.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="slide">
+                            <div class="img-wrap">
+                                <img src="images/portfolio_img/carousel_5.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_4.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="img-wrap">
+                                <img src="images/portfolio_img/carousel_6.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_4.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="slide">
+                            <div class="img-wrap">
+                                <img src="images/portfolio_img/carousel_2.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_4.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="img-wrap">
+                                <img src="images/portfolio_img/carousel_1.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_4.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="slide">
+                            <div class="img-wrap">
+                                <img src="images/portfolio_img/carousel_4.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_4.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="img-wrap">
+                                <img src="images/portfolio_img/carousel_3.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_4.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="slide">
+                            <div class="img-wrap">
+                                <img src="images/portfolio_img/carousel_6.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_4.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="img-wrap">
+                                <img src="images/portfolio_img/carousel_5.jpg" />
+
+                                <a class="description" href="images/portfolio_img/carousel_4.jpg" rel="prettyPhoto[portfolio]">
+                                    <div>
+                                        <span class="title text-color">heart</span>
+
+                                        <span class="categoty">wedding photo</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="parallax-section-2" class="parallax-section" data-type="background">
+                <div class="parallax-section-inner">
+                    <div class="container">
+                        <div class="parallax-content">
+                            <h3 class="opacity-box">join thousands of awesome people, there’s only one thing to do. subscribe!</h3>
+
+                            <form class="form form-subscribe opacity-box">
+                                <input type="text" name="mail" value="your e-mail please?" onFocus="if (this.value == 'your e-mail please?') this.value = '';" onBlur="if (this.value == '') this.value = 'your e-mail please?';" />
+
+                                <input class="btn-color" type="submit" value="sign up now" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="nav-waypoint">
+            <section id="blog-section" class="page-section with-black-side">
+                <div class="container">
+                    <h1 class="section-title opacity-box">Blog</h1>
+
+                    <div id="blog-list">
+                        <div class="post-item opacity-box">
+                            <div class="img" style="background-image: url(images/blog_img/1.jpg);"></div>
+
+                            <span class="date-post">20<span>/08</span></span>
+
+                            <div class="blog-content">
+                                <h2 class="text-hover-color"><a href="blog-page.html">this is a blog title</a></h2>
+
+                                <div class="blog-meta">
+                                    <span><i class="icon-pencil-1"></i><a href="#">Artureanec</a></span>
+
+                                    <span><i class="icon-tag-1"></i><a href="#">Photo</a></span>
+
+                                    <span><i class="icon-chat"></i><a href="#">27</a></span>
+                                </div>
+
+                                <p>
+                                    Morbi id luctus augue. Duis sit amet semper odio. Nullam a mauris rutrum, sollicitudin nisl consequat, pellentesque nisl. Nam at congue felis. Duis eu massa urna. Sed vulputate ac justo eget rhoncus. Fusce eu risus semper, mattis sapien quis, convallis elit. Donec pharetra orci leo, vel pulvinar quam fermentum vel. Aenean at accumsan justo. Vivamus nec fringilla tellus, vel vulputate turpis. Morbi non vehicula lectus. Vestibulum ornare rhoncus fermentum.
+                                </p>
+
+                                <a class="more" href="blog-page.html">read more</a>
+                            </div>
+                        </div>
+
+                        <div class="post-item opacity-box">
+                            <div class="img" style="background-image: url(images/blog_img/2.jpg);"><a class="btn-video" href="http://www.youtube.com/watch?v=ynvKWYvyCqw" rel="prettyPhoto"></a></div>
+
+                            <span class="date-post">18<span>/08</span></span>
+
+                            
+
+                            <div class="blog-content">
+                                <h2 class="text-hover-color"><a href="blog-page.html">this is a blog title</a></h2>
+
+                                <div class="blog-meta">
+                                    <span><i class="icon-pencil-1"></i><a href="#">Artureanec</a></span>
+
+                                    <span><i class="icon-tag-1"></i><a href="#">Photo</a></span>
+
+                                    <span><i class="icon-chat"></i><a href="#">27</a></span>
+                                </div>
+
+                                <p>
+                                    Morbi id luctus augue. Duis sit amet semper odio. Nullam a mauris rutrum, sollicitudin nisl consequat, pellentesque nisl. Nam at congue felis. Duis eu massa urna. Sed vulputate ac justo eget rhoncus. Fusce eu risus semper, mattis sapien quis, convallis elit. Donec pharetra orci leo, vel pulvinar quam fermentum vel. Aenean at accumsan justo. Vivamus nec fringilla tellus, vel vulputate turpis. Morbi non vehicula lectus. Vestibulum ornare rhoncus fermentum. Morbi eu euismod ligula, ut blandit sem. Donec sed pulvinar mi. Nulla leo tellus, mollis id rhoncus facilisis, pretium eu lacus.
+                                </p>
+
+                                <a class="more" href="blog-page.html">read more</a>
+                            </div>
+                        </div>
+
+                        <div class="load-more">
+                            <a class="icon-down-open" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="counter-section" class="parallax-section" data-type="background">
+                <div class="parallax-section-inner">
+                    <div class="container">
+                        <div class="parallax-content">
+                            <h3 class="text-color opacity-box">SOME  fun FACTS</h3>
+
+                            <div class="counter-box counter opacity-box" data-counter="1570">
+                                <span class="count">1570</span>
+                                <span class="counter-details">happy clients</span>
+                            </div>
+
+                            <div class="counter-box counter opacity-box" data-counter="1247">
+                                <span class="count">1247</span>
+                                <span class="counter-details">completed projects</span>
+                            </div>
+
+                            <div class="counter-box counter opacity-box" data-counter="346">
+                                <span class="count">346</span>
+                                <span class="counter-details">best shots</span>
+                            </div>
+
+                            <div class="counter-box counter opacity-box" data-counter="346">
+                                <span class="count">346</span>
+                                <span class="counter-details">winning awards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="nav-waypoint">
+            <section id="contact-section" class="page-section with-black-side">
+                <div class="container">
+                    <h1 class="section-title opacity-box">Contact</h1>
+
+                    <div id="contact-form-result"></div>
+
+                    <form id="contact-form" class="opacity-box" action="" method="post">
+                        <div class="first">
+                            <input class="required" id="contact-form-name" type="text" name="name" value="" placeholder="your name" />
+
+                            <input class="required email" id="contact-form-email" type="text" name="email" value="" placeholder="your e-mail goes here" />
+
+                            <input id="contact-form-phone" type="text" name="phone" value="" placeholder="your phone" />
+                        </div>
+
+                        <div class="second">
+                            <textarea class="required" name="message" id="contact-form-message" placeholder="your message"></textarea>
+
+                            <input class="btn-color" type="submit" value="sign up now">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <footer class="parallax-section">
+            <div class="parallax-section-inner">
+                <div class="container">
+                    <div class="parallax-content">
+                        <p><span class="text-color">PHONE :</span> +1 959 603 6035</p>
+
+                        <p><span class="text-color">EMAIL :</span> <a href="mailto:lemuelforeman@sitename.com">lemuelforeman@sitename.com</a></p>
+
+                        <p>
+                            <span class="text-color">vicit me :</span><br />
+
+                            <small>
+                                1 Iron Bridge House<br />
+                                1Bridge Approach<br />
+                                London NW1
+                            </small>
+                        </p>
+
+                        <p id="copyright">© Copyrights 2013, Lemuel  Foreman. All rights reserved. <a href="http://themeforest.net/user/Artureanec" target="_blank">by artureanec</a></p>
+
+                        <a id="to-top" class="text-color" href="#">
+                            <span class="icon-up-open"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="js/jquery-packed_plugins.js"></script>
+        <script type="text/javascript" src="js/jquery.main.js"></script>
+        <script type="text/javascript" src="js/jquery.superslides.min.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+        <script>
+            /* Slides
+            ================================================== */
+            $('#slides').superslides({
+                animation: 'fade',
+                pagination: false,
+                play: 7000,
+                animation_speed: 3000,
+            });
+
+            $('#portfolio-slider').superslides({
+                animation: 'fade',
+                pagination: false,
+                play: 5000,
+                animation_speed: 1500,
+                inherit_width_from: '#portfolio-slider-wrapper',
+                inherit_height_from: '#portfolio-slider-wrapper'
+            });
+
+            $('#portfolio-carousel').bxSlider({
+                slideWidth: 255,
+                minSlides: 1,
+                maxSlides: 4,
+                slideMargin: 30,
+                moveSlides: 1,
+                auto: true,
+                autoHover: true,
+                pager: false,
+                nextText: '',
+                prevText: '',
+            });
+
+            $('.bx-wrapper .bx-prev').addClass('icon-left-open');
+            $('.bx-wrapper .bx-next').addClass('icon-right-open');
+
+
+            /* Scroll Header
+            ================================================== */
+            var H_height = jQuery("#header-section").height();
+
+            if( $.browser.msie && $.browser.version <= 9){
+                 jQuery("#header-section").css("top", -H_height);
+            }
+
+            $(window).on('scroll',function(){
+
+                if( $(window).scrollTop() >= $(window).height()-20){
+
+                    if( $.browser.msie && $.browser.version <= 9){
+                         jQuery("#header-section").stop(true).animate({top: "0"} , 600 );
+                    }
+
+                    jQuery("#header-section").addClass("header-fixed");
+
+                }else{
+
+                    if( $.browser.msie && $.browser.version <= 9){
+                         jQuery("#header-section").stop(true).animate({top: -H_height} , 600 );
+                    }
+
+                    jQuery("#header-section").removeClass("header-fixed");
+
+                    jQuery("#menu_link.active").removeClass('active').next().slideUp();
+                }
+            });
+        </script>
+    </body>
 </html>
